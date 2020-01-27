@@ -1,0 +1,423 @@
+animal: human
+
+##############################
+#                            #
+#          MUSCLES           #
+#                            #
+##############################
+
+muscles:
+  glut_max_r:
+    name: glut_max_r
+    model: geyer
+    m_id: glut_max_r
+    l_opt: 0.11
+    f_max: 1500
+    v_max: -12
+    l_slack: 0.13
+    pennation: 0.5
+    muscle_type: mono
+    joint_attach: hip_r
+    theta_ref: -30 
+    theta_max: -180
+    r_0: 0.10
+    direction: cclockwise
+    td_to_sc: 15
+    td_from_sc: 15
+
+  psoas_r:
+    name: psoas_r 
+    model: geyer
+    m_id: psoas_r
+    l_opt: 0.11
+    f_max: 2000
+    v_max: -12
+    l_slack: 0.1
+    pennation: 0.5
+    muscle_type: mono
+    joint_attach: hip_r 
+    theta_ref: 0
+    theta_max: -180
+    r_0: 0.10
+    direction: clockwise
+    td_to_sc: 15
+    td_from_sc: 15
+
+  rec_fem_r:
+    name: rec_fem_r 
+    model: geyer
+    m_id: rec_fem_r
+    l_opt: 0.081
+    f_max: 1200
+    v_max: -12
+    l_slack: 0.35
+    pennation: 0.5
+    muscle_type: bi
+    joint_attach: knee_r 
+    joint_attach2: hip_r 
+    theta_ref: 55
+    theta_ref2: -20
+    theta_max: 15
+    theta_max2: -180
+    r_0: 0.04
+    r_02: 0.08
+    direction: clockwise
+    direction2: clockwise
+    td_to_sc: 37
+    td_from_sc: 37
+
+  bifemlh_r:
+    name: bifemlh_r 
+    model: geyer
+    m_id: bifemlh_r
+    l_opt: 0.1
+    f_max: 3000
+    v_max: -12
+    l_slack: 0.31
+    pennation: 0.7
+    muscle_type: bi
+    joint_attach: knee_r 
+    joint_attach2: hip_r 
+    theta_ref: 0
+    theta_ref2: -25
+    theta_max: 0
+    theta_max2: -180
+    r_0: 0.05
+    r_02: 0.08
+    direction: cclockwise
+    direction2: cclockwise
+    td_to_sc: 25
+    td_from_sc: 25
+    
+  bifemsh_r:
+    name: bifemsh_r 
+    model: geyer
+    m_id: bifemsh_r
+    l_opt: 0.12
+    f_max: 1200
+    v_max: -12
+    l_slack: 0.1
+    pennation: 0.7
+    muscle_type: mono
+    joint_attach: knee_r 
+    theta_ref: 5
+    theta_max: 45
+    r_0: 0.05
+    direction: cclockwise
+    td_to_sc: 25
+    td_from_sc: 25
+
+  vas_int_r:
+    name: vas_int_r 
+    model: geyer
+    m_id: vas_int_r
+    l_opt: 0.08
+    f_max: 6000
+    v_max: -12
+    l_slack: 0.23
+    pennation: 0.7
+    muscle_type: mono
+    joint_attach: knee_r 
+    theta_ref: 55
+    theta_max: 15
+    r_0: 0.06
+    direction: clockwise
+    td_to_sc: 45
+    td_from_sc: 45
+    
+  med_gas_r:
+    name: med_gas_r 
+    model: geyer
+    m_id: med_gas_r
+    l_opt: 0.05
+    f_max: 1500
+    v_max: -12
+    l_slack: 0.4
+    pennation: 0.7
+    muscle_type: bi
+    joint_attach: ankle_r 
+    joint_attach2: knee_r 
+    theta_ref: -10
+    theta_ref2: 15
+    theta_max: 20
+    theta_max2: 40
+    r_0: 0.05
+    r_02: 0.05
+    direction: cclockwise
+    direction2: cclockwise
+    td_to_sc: 22
+    td_from_sc: 22
+
+  soleus_r:
+    name: soleus_r 
+    model: geyer
+    m_id: soleus_r
+    l_opt: 0.04
+    f_max: 4000
+    v_max: -6
+    l_slack: 0.26
+    pennation: 0.5
+    muscle_type: mono
+    joint_attach: ankle_r 
+    theta_ref: -10
+    theta_max: 20
+    r_0: 0.05
+    direction: cclockwise
+    td_to_sc: 17
+    td_from_sc: 17
+    
+  tib_ant_r:
+    name: tib_ant_r 
+    model: geyer
+    m_id: tib_ant_r
+    l_opt: 0.06
+    f_max: 4000
+    v_max: -12
+    l_slack: 0.24
+    pennation: 0.7
+    muscle_type: mono
+    joint_attach: ankle_r 
+    theta_ref: 20
+    theta_max: -10
+    r_0: 0.04
+    direction: clockwise
+    td_to_sc: 30
+    td_from_sc: 30
+
+  glut_max_l:
+    name: glut_max_l
+    model: geyer
+    m_id: glut_max_l
+    l_opt: 0.11
+    f_max: 1500
+    v_max: -12
+    l_slack: 0.13
+    pennation: 0.5
+    muscle_type: mono
+    joint_attach: hip_l
+    theta_ref: -30 
+    theta_max: -180
+    r_0: 0.10
+    direction: cclockwise
+    td_to_sc: 15
+    td_from_sc: 15
+
+  psoas_l:
+    name: psoas_l 
+    model: geyer
+    m_id: psoas_l
+    l_opt: 0.11
+    f_max: 2000
+    v_max: -12
+    l_slack: 0.1
+    pennation: 0.5
+    muscle_type: mono
+    joint_attach: hip_l 
+    theta_ref: 0
+    theta_max: -180
+    r_0: 0.10
+    direction: clockwise
+    td_to_sc: 15
+    td_from_sc: 15
+
+  rec_fem_l:
+    name: rec_fem_l 
+    model: geyer
+    m_id: rec_fem_l
+    l_opt: 0.081
+    f_max: 1200
+    v_max: -12
+    l_slack: 0.35
+    pennation: 0.5
+    muscle_type: bi
+    joint_attach: knee_l 
+    joint_attach2: hip_l 
+    theta_ref: 55
+    theta_ref2: -20
+    theta_max: 15
+    theta_max2: -180
+    r_0: 0.04
+    r_02: 0.08
+    direction: clockwise
+    direction2: clockwise
+    td_to_sc: 37
+    td_from_sc: 37
+
+  bifemlh_l:
+    name: bifemlh_l 
+    model: geyer
+    m_id: bifemlh_l
+    l_opt: 0.1
+    f_max: 3000
+    v_max: -12
+    l_slack: 0.31
+    pennation: 0.7
+    muscle_type: bi
+    joint_attach: knee_l 
+    joint_attach2: hip_l 
+    theta_ref: 0
+    theta_ref2: -25
+    theta_max: 0
+    theta_max2: -180
+    r_0: 0.05
+    r_02: 0.08
+    direction: cclockwise
+    direction2: cclockwise
+    td_to_sc: 25
+    td_from_sc: 25
+    
+  bifemsh_l:
+    name: bifemsh_l
+    model: geyer
+    m_id: bifemsh_l
+    l_opt: 0.12
+    f_max: 1200
+    v_max: -12
+    l_slack: 0.1
+    pennation: 0.7
+    muscle_type: mono
+    joint_attach: knee_l 
+    theta_ref: 5
+    theta_max: 45
+    r_0: 0.05
+    direction: cclockwise
+    td_to_sc: 25
+    td_from_sc: 25
+
+  vas_int_l:
+    name: vas_int_l 
+    model: geyer
+    m_id: vas_int_l
+    l_opt: 0.08
+    f_max: 6000
+    v_max: -12
+    l_slack: 0.23
+    pennation: 0.7
+    muscle_type: mono
+    joint_attach: knee_l 
+    theta_ref: 55
+    theta_max: 15
+    r_0: 0.06
+    direction: clockwise
+    td_to_sc: 45
+    td_from_sc: 45
+    
+  med_gas_l:
+    name: med_gas_l
+    model: geyer
+    m_id: med_gas_l
+    l_opt: 0.05
+    f_max: 1500
+    v_max: -12
+    l_slack: 0.4
+    pennation: 0.7
+    muscle_type: bi
+    joint_attach: ankle_l
+    joint_attach2: knee_l 
+    theta_ref: -10
+    theta_ref2: 15
+    theta_max: 20
+    theta_max2: 40
+    r_0: 0.05
+    r_02: 0.05
+    direction: cclockwise
+    direction2: cclockwise
+    td_to_sc: 22
+    td_from_sc: 22
+
+  soleus_l:
+    name: soleus_l 
+    model: geyer
+    m_id: soleus_l
+    l_opt: 0.04
+    f_max: 4000
+    v_max: -6
+    l_slack: 0.26
+    pennation: 0.5
+    muscle_type: mono
+    joint_attach: ankle_l 
+    theta_ref: -10
+    theta_max: 20
+    r_0: 0.05
+    direction: cclockwise
+    td_to_sc: 17
+    td_from_sc: 17
+    
+  tib_ant_l:
+    name: tib_ant_l 
+    model: geyer
+    m_id: tib_ant_l
+    l_opt: 0.06
+    f_max: 4000
+    v_max: -12
+    l_slack: 0.24
+    pennation: 0.7
+    muscle_type: mono
+    joint_attach: ankle_l 
+    theta_ref: 20
+    theta_max: -10
+    r_0: 0.04
+    direction: clockwise
+    td_to_sc: 30
+    td_from_sc: 30
+    
+##############################
+#                            #
+#          JOINTS            #
+#                            #
+##############################
+joints:
+  hip_r:
+    name: hip_r
+    model: geyer
+    joint_max: 50
+    reference_angle: 0
+    joint_min: -160
+    passive_stiffness: 3000
+    joint_type: CONSTANT
+
+  knee_r:
+    name: knee_r
+    model: geyer
+    joint_max: 135
+    reference_angle: 0
+    joint_min: 5
+    passive_stiffness: 3000
+    joint_type: GEYER
+
+  ankle_r:
+    name: ankle_r
+    model: geyer
+    joint_max: 40
+    reference_angle: 0
+    joint_min: -40
+    passive_stiffness: 3000
+    joint_type: GEYER
+
+  hip_l:
+    name: hip_l
+    model: geyer
+    joint_max: 50
+    reference_angle: 0
+    joint_min: -160
+    passive_stiffness: 3000
+    joint_type: CONSTANT
+
+  knee_l:
+    name: knee_l
+    model: geyer
+    joint_max: 135
+    reference_angle: 0
+    joint_min: 5
+    passive_stiffness: 3000
+    joint_type: GEYER
+
+  ankle_l:
+    name: ankle_l
+    model: geyer
+    joint_max: 40
+    reference_angle: 0
+    joint_min: -40
+    passive_stiffness: 3000
+    joint_type: GEYER
+

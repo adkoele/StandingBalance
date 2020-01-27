@@ -1,0 +1,14 @@
+#: Python
+*.pyc
+\#*
+*.*~
+*.bak
+
+#: Log
+*.log
+
+#: Profiling
+*.prof
+
+#: Build
+build
