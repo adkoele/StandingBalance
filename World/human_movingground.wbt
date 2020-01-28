@@ -596,7 +596,7 @@ DEF MOVING_GROUND Robot {
       }
     }
   ]
-  controller ""
+  controller "MovingGroundfull"
   supervisor TRUE
 }
 Robot {
